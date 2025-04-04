@@ -26,27 +26,27 @@ The program implements a scheduling algorithm that prioritizes processes based o
 ### Scheduling Algorithm (`run_scheduling` method)
 This is the core of the application:
 
-1. Input Collection:
+1. **Input Collection**:
    - Gathers arrival times, burst times, and energy values from the GUI
 
-2. Sorting Strategy:
+2. **Sorting Strategy**:
    - Processes are sorted by "energy efficiency" (energy per burst time)
    - Calculation: `energy_consumption / burst_time`
    - Lower values mean more energy-efficient processes
 
-3. Scheduling Calculations:
-   - Completion Time: When each process finishes
+3. **Scheduling Calculations**:
+   - **Completion Time**: When each process finishes
      - First process: `arrival_time + burst_time`
      - Subsequent processes: `max(previous completion, current arrival) + burst_time`
-   - Waiting Time: Time spent waiting before execution starts
+   - **Waiting Time**: Time spent waiting before execution starts
      - `previous completion_time - current arrival_time`
-   - Turnaround Time: Total time from arrival to completion
+   - **Turnaround Time**: Total time from arrival to completion
      - `waiting_time + burst_time`
 
-4. Metrics Calculation:
+4. **Metrics Calculation**:
    - Averages for waiting time, turnaround time, and energy consumption
 
-5. Results Display:
+5. **Results Display**:
    - Shows calculated averages
    - Calls `display_table` to show detailed process information
 
@@ -58,23 +58,23 @@ This is the core of the application:
 
 ## 3. Key Algorithm Characteristics
 
-1. Energy-Efficient Priority:
+1. **Energy-Efficient Priority**:
    - The scheduler prioritizes processes that deliver the most work (burst time) per unit of energy
    - This is different from traditional schedulers that might prioritize shortest job first
 
-2. Non-Preemptive:
+2. **Non-Preemptive**:
    - Once a process starts, it runs to completion
    - The scheduler only makes decisions when the CPU becomes idle
 
-3. Performance Metrics:
+3. **Performance Metrics**:
    - Tracks standard scheduling metrics (waiting time, turnaround time)
    - Also considers energy consumption as a key metric
 
 ## 4. How to Interpret the Results
 
-1. Average Waiting Time: Lower is better (processes wait less)
-2. Average Turnaround Time: Lower is better (faster completion)
-3. Average Energy Consumption: Lower is better (more efficient)
+1. **Average Waiting Time**: Lower is better (processes wait less)
+2. **Average Turnaround Time**: Lower is better (faster completion)
+3. **Average Energy Consumption**: Lower is better (more efficient)
 
 The scheduler tries to balance these metrics by prioritizing energy-efficient processes.
 
@@ -86,3 +86,4 @@ The scheduler tries to balance these metrics by prioritizing energy-efficient pr
 4. Could handle cases where arrival times are out of order more gracefully
 
 This implementation provides a good foundation for understanding how energy considerations can be incorporated into CPU scheduling decisions.
+
