@@ -102,3 +102,4 @@ class EnergyEfficientCPUScheduler:
 root = tk.Tk()
 app = EnergyEfficientCPUScheduler(root)
 root.mainloop()
+
