@@ -1,4 +1,4 @@
-# Energy-Efficient CPU Scheduling Algorithm
+# **Energy-Efficient CPU Scheduling Algorithm**
 
 ## 📌 Project Overview
 The project aims to design and implement a CPU scheduling algorithm that optimizes power consumption while maintaining system performance. Traditional CPU scheduling algorithms focus on fairness, turnaround time, and throughput, but they often ignore energy efficiency. This project introduces a novel or improved scheduling technique to reduce power consumption in modern computing environments, particularly for battery-powered devices and data centers.
@@ -22,7 +22,7 @@ The project aims to design and implement a CPU scheduling algorithm that optimiz
 ---
 
 
-### How to Use
+### **How to Use**
 - Installation: Set up the environment with the necessary tools and libraries.
 - Execution: Run the scheduling algorithm with different workloads to analyze its efficiency.  
 - Customization: Modify parameters like time quantum and CPU frequency scaling policies.
@@ -47,3 +47,4 @@ The project aims to design and implement a CPU scheduling algorithm that optimiz
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
 #### Feel free to contact me via GitHub Issues or email at praneetp.s.1409@gmail.com.
+
